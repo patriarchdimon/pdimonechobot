@@ -3,7 +3,9 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters.command import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 import asyncio
+import os
 
+API_TOKEN = os.getenv("API_TOKEN")
 BOT = Bot(token = API_TOKEN)
 DP = Dispatcher()
 
