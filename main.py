@@ -5,7 +5,6 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 import asyncio
 import nest_asyncio
 
-API_TOKEN = "6135619688:AAFZXb9PfZgyLoScaU5psbBCDQIKXcBwrH8"
 BOT = Bot(token = API_TOKEN)
 DP = Dispatcher()
 
