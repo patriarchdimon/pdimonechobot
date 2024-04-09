@@ -3,7 +3,6 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters.command import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 import asyncio
-import nest_asyncio
 
 BOT = Bot(token = API_TOKEN)
 DP = Dispatcher()
@@ -44,5 +43,4 @@ async def cmd_echo(message: types.Message):
 async def main():
     await DP.start_polling(BOT)
 
-nest_asyncio.apply()
 asyncio.run(main())
